@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+    <title></title>
+  </head>
+  <body>
+    <div class= "container">
+      <div class= "well">
+      <form id="playerName">
+        <div class="form-group">
+          <label for="nameOne"><h2>Player 1</h2></label>
+          <input type="text"  class="form-control" id="nameOne" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="nameTwo"><h2>Player 2</h2></label>
+          <input type="text"  class="form-control" id="nameTwo"placeholder="Enter Name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+      <div id="nameChart" class="jumbotron">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label><span class= "nameOne "></span></label>
+            <ul>
+              <li>Round Total:<span id="roundTotal"></span></li>
+              <li>Total:<span id="total"></span></li>
+            </ul>
+          </div>
+          <div class="form-group col-md-6">
+            <label><span class= "nameTwo "></span></label>
+            <ul>
+              <li>Round Total:<span id="roundTotalTwo"></span></li>
+              <li>Total:<span id="totalTwo"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p id="placeholder"></p>
+      <button type="button" id="rollDice" onclick="diceRoll()">Roll the Dice!</button>
+      <button type="button" onclick="reset()">Reset Roll</button>
+      <div id="output"><span class="output"></span>
+      </div>
+      <div  id="output1">
+      </div>
+    </div>
+  </body>
+</html>
